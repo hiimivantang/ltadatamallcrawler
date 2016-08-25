@@ -1,0 +1,17 @@
+description,freq,url
+Bus Arrival,1m,http://datamall2.mytransport.sg/ltaodataservice/BusArrival
+Bus Services,ad-hoc,http://datamall2.mytransport.sg/ltaodataservice/BusServices
+Bus Routes,ad-hoc,http://datamall2.mytransport.sg/ltaodataservice/BusRoutes
+Bus Stops,ad-hoc,http://datamall2.mytransport.sg/ltaodataservice/BusStops
+Taxi Availability,2m,http://datamall2.mytransport.sg/ltaodataservice/Taxi-Availability
+Carpark Availability,1m,http://datamall2.mytransport.sg/ltaodataservice/CarParkAvailability
+ERP Rates,ad-hoc,http://datamall2.mytransport.sg/ltaodataservice/ERPRates
+Estimated Travel Times,5m,http://datamall2.mytransport.sg/ltaodataservice/EstTravelTimes
+Faulty Traffic Lights,2m,http://datamall2.mytransport.sg/ltaodataservice/FaultyTrafficLights
+Road Openings,1d,http://datamall2.mytransport.sg/ltaodataservice/RoadOpenings
+Road Works,1d,http://datamall2.mytransport.sg/ltaodataservice/RoadWorks
+Traffic Images,5m,http://datamall2.mytransport.sg/ltaodataservice/Traffic-Images
+Traffic Incidents,2m,http://datamall2.mytransport.sg/ltaodataservice/TrafficIncidents
+Traffic Speed Bands,5m,http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands
+VMS / EMAS,2m,http://datamall2.mytransport.sg/ltaodataservice/VMS
+

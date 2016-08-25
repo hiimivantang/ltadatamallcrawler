@@ -1,0 +1,49 @@
+ltadatamall:
+    key: <%= ENV['LTADATAMALLKEY'] %>       #replace with your LTA DATAMALL KEY
+    guuid: <%= ENV['LTADATAMALLGUUID'] %>   #replace with your LTA DATAMALL GUUID
+urls:
+    bus-arrival:
+        frequency: 1m
+        url: http://datamall2.mytransport.sg/ltaodataservice/BusArrival
+    bus-services:
+        frequency: ad-hoc
+        url: http://datamall2.mytransport.sg/ltaodataservice/BusServices
+    bus-routes:
+        frequency: ad-hoc
+        url: http://datamall2.mytransport.sg/ltaodataservice/BusRoutes
+    bus-stops:
+        frequency: ad-hoc
+        url: http://datamall2.mytransport.sg/ltaodataservice/BusStops
+    taxi-availability:
+        frequency: 2m
+        url: http://datamall2.mytransport.sg/ltaodataservice/Taxi-Availability
+    carpark-availability:
+        frequency: 1m
+        url: http://datamall2.mytransport.sg/ltaodataservice/CarParkAvailability
+    erp-rates:
+        frequency: ad-hoc
+        url: http://datamall2.mytransport.sg/ltaodataservice/ERPRates
+    estimated-travel-times:
+        frequency: 5m
+        url: http://datamall2.mytransport.sg/ltaodataservice/EstTravelTimes
+    faulty-traffic-lights:
+        frequency: 2m
+        url: http://datamall2.mytransport.sg/ltaodataservice/FaultyTrafficLights
+    road-openings:
+        frequency: 1d
+        url: http://datamall2.mytransport.sg/ltaodataservice/RoadOpenings
+    road-works:
+        frequency: 1d
+        url: http://datamall2.mytransport.sg/ltaodataservice/RoadWorks
+    traffic-images:
+        frequency: 5m
+        url: http://datamall2.mytransport.sg/ltaodataservice/Traffic-Images
+    traffic-incidents:
+        frequency: 2m
+        url: http://datamall2.mytransport.sg/ltaodataservice/TrafficIncidents
+    traffic-speed-bands:
+        frequency: 5m
+        url: http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands
+    vms-emas:
+        frequency: 2m
+        url: http://datamall2.mytransport.sg/ltaodataservice/VMS
