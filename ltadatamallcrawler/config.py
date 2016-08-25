@@ -1,4 +1,6 @@
+from __future__ import print_function
 import os, re, yaml
+import sys
 
 
 #define the regex pattern that the parser will use to 'implicitely' tag your node
@@ -20,10 +22,20 @@ def pathex_constructor(loader,node):
 yaml.add_constructor('!pathex', pathex_constructor)
 
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
 
 with open('settings.yaml', 'r') as stream:
     try:
         settings = yaml.load(stream)
     except yaml.YAMLError as e:
-        print(e)
+        eprint(e)
+        settings = {}
+    except KeyError as e:
+        eprint("this will not work unless you set environment variable for %s" %(e.message))
+        if e.message == 'LTADATAMALLKEY':
+            eprint("e.g. echo 'export %s=%s'" %(e.message,"<INSERT YOUR LTA DATAMALL API KEY>"))
+        elif e.message =='LTADATAMALLGUUID':
+            eprint("e.g. echo 'export %s=%s'" %(e.message,"<INSERT YOUR LTA DATAMALL GUUID>"))
         settings = {}
