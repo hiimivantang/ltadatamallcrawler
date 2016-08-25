@@ -46,9 +46,11 @@ setup(
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU GENERAL PUBLIC LICENSE',
+        'License :: OSI Approved :: GNU General Public License (GPL)',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
+        'Operating System :: POSIX :: Linux',
+        'Operating System :: MacOS :: MacOS X',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
