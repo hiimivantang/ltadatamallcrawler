@@ -35,9 +35,12 @@ setup(
     author_email='hiimivantang@gmail.com',
     url='https://github.com/hiimivantang/ltadatamallcrawler',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+    #package_data={
+    #  'ltadatamallcrawler':['urls.csv','settings.yaml']
+    #},
     entry_points={
         'console_scripts':[
-            'ltadatamallcrawler=ltadatamallcrawler.cli:cli',
+            'lta-datamall-crawler=ltadatamallcrawler.requestor:main',
             ],
         },
     include_package_data=True,

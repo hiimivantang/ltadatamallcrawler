@@ -26,7 +26,7 @@ def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
 
-with open('settings.yaml', 'r') as stream:
+with open(os.path.dirname(__file__) + '/' + 'settings.yaml', 'r') as stream:
     try:
         settings = yaml.load(stream)
     except yaml.YAMLError as e:
