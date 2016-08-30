@@ -20,6 +20,11 @@ Or, you can always clone this project and run the script directly.
 
 
 
+### Requirements
+
+You will need LTA datamall API key and GUUID.
+To get the API key, click "Request for API Access" on the [LTA datamall page][3]. API key will be granted immediately. Using the API key, you can generate a GUUID on [this page][4].
+
 
 ### Usage
 
@@ -96,8 +101,6 @@ Sometimes it can be quite labourous to create boilerplate codes for doing HTTP g
 | VMS / EMAS             | 2m       | http://datamall2.mytransport.sg/ltaodataservice/VMS                 |
 
 
-[1]:https://www.mytransport.sg/content/mytransport/home/dataMall.html
-[2]:https://pypi.python.org/pypi/requests/2.11.1
 
 
 
@@ -105,3 +108,10 @@ Sometimes it can be quite labourous to create boilerplate codes for doing HTTP g
 
 * allow HTTP requests with parameters for filtering results
 * create appropriate unittests
+
+
+
+[1]:https://www.mytransport.sg/content/mytransport/home/dataMall.html
+[2]:https://pypi.python.org/pypi/requests/2.11.1
+[3]:https://www.mytransport.sg/content/mytransport/home/dataMall.html
+[4]:http://datamall.mytransport.sg/tool.aspx
