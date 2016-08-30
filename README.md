@@ -106,6 +106,7 @@ Sometimes it can be quite labourous to create boilerplate codes for doing HTTP g
 
 ### Project Roadmap
 
+* use as a library in python script
 * allow HTTP requests with parameters for filtering results
 * create appropriate unittests
 
