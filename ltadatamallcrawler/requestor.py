@@ -19,7 +19,7 @@ class SelectedMode:
     def getdata(self):
         try:
             return requests.get(self.url, headers=self.headers).text
-        except Exception, e:
+        except Exception as e:
             sys.stderr.write('%s\n'%e.message)
         return None
 
