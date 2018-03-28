@@ -14,7 +14,7 @@ class SelectedMode:
         self.frequency = settings['urls'][selected_api]['frequency']
 
     def describe(self):
-        print "API: %s" %self.selected_api
+        print("API: %s" %self.selected_api)
 
     def getdata(self):
         try:
@@ -38,9 +38,9 @@ def main():
 
     selectedmode = SelectedMode(opts.mode)
 
-    # print selectedmode.url
-    # print selectedmode.frequency
-    # print selectedmode.headers
+    # print(selectedmode.url)
+    # print(selectedmode.frequency)
+    # print(selectedmode.headers)
     import json
     from pprint import pprint
     pprint(json.loads(selectedmode.getdata()))
